@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Too</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+        body {
+            font-family: 'Parisienne', cursive;
+            background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .heart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-image: url('heart.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: heartbeat 1s infinite;
+        }
+        button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>I Love You Too!</h1>
+            <p>Your love has filled my heart with joy and happiness. I am so grateful to have you in my life.</p>
+            <div class="heart-container">
+                <div class="heart"></div>
+            </div>
+            <button class="message-btn">Message Me</button>
+        </div>
+    </div>
+
+    <script>
+        const messageBtn = document.querySelector('.message-btn');
+        messageBtn.addEventListener('click', () => {
+            window.location.href = 'https://www.instagram.com/manik_magar0_0/';
+        });
+    </script>
+</body>
+</html>
